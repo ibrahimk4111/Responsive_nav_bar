@@ -12,14 +12,15 @@
   padding: 20px 40px;
   font-family: Arial, Helvetica, sans-serif;
 
-  //Navigation left side
+  // start navigation left side
   .nav_left {
     img{
       width: 60%;
     }
   }
-
-  //Navigation main menu bar
+// end navigation left side
+  
+  // start navigation main menu bar
   .main_menu {
     display: flex;
     align-items: center;
@@ -32,6 +33,7 @@
           position: relative;
           letter-spacing: 2px;
           text-transform: uppercase;
+          cursor: pointer;
           &::before {
             content: "";
             background: #000;
@@ -51,9 +53,9 @@
       }
     }
   }
+// end navigation main menu bar
 
-
-  //Navigation search input
+  //start Navigation search input
   .search_show {
     display: flex;
     align-items: center;
@@ -78,8 +80,9 @@
     right: -100%;
     display: none;
   }
-
-  //Navigation search and close bar
+  //end Navigation search input
+  
+  //start Navigation search and close bar
   .btns {
     position: relative;
     left: 0px;
@@ -90,19 +93,18 @@
       align-items: center;
       font-size: large;
       z-index: 10;
+      cursor: pointer;
       
       .show_btn {
         margin-left: 10px;
         visibility: visible;
-        cursor: pointer;
       }
 
       .hide_btn {
         visibility: hidden;
-        cursor: pointer;
       }
     }
-
+  //end Navigation search and close bar
     //toggle button
     .toggle_btn {
       position: relative;
@@ -113,6 +115,8 @@
   }
 }
 
+
+//media start
 @media (max-width: 800px) {
   .wrapper{
     
